@@ -69,7 +69,7 @@ include_directories(
 )
 
 ## Declare a cpp library
-if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic)")
+if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic|melodic)")
     add_library(calibrationtoolkit
             CalibrationToolkit/calibrationtoolkit.cpp
             CalibrationToolkit/calibrationtoolkit.h
@@ -91,7 +91,7 @@ if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic)")
 endif ()
 
 ## 2D
-if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic)")
+if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic|melodic)")
     add_executable(calibration_test
             nodes/calibration_test/chessboard.cpp
             nodes/calibration_test/trans.cpp
@@ -111,7 +111,7 @@ if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic)")
             ${catkin_LIBRARIES} ${OpenCV_LIBS} xml2 ${OPENGL_LIBRARIES})
 endif ()
 ## 3D
-if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic)")
+if ("${ROS_VERSION}" MATCHES "(indigo|jade|kinetic|melodic)")
 
     qt5_wrap_ui(calibration_toolkit_ui_mainwindow nodes/calibration_toolkit/mainwindow.ui)
 

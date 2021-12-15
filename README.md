@@ -1,4 +1,21 @@
 # calibration_camera_lidar
+
+## Dependency
+
+1. [nlopt](https://github.com/stevengj/nlopt)
+2. [Optional]`error while loading shared libraries: libnlopt.so.0`
+
+    ```shell
+    sudo apt-get install libnlopt0
+    ```
+
+## Reference
+
+1. [Couldn't find executable named calibration_toolkit-Issues#7](https://github.com/XidianLemon/calibration_camera_lidar/issues/7)
+2. [Stack Exchange](https://unix.stackexchange.com/questions/553239/libnlopt-so-0-cannot-open-shared-object-file)
+
+------
+
 从autoware分离出来的相机雷达联合标定ros包
 
 metapackage
